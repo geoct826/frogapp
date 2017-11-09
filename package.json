@@ -1,0 +1,25 @@
+{
+  "name": "FrogApp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:geoct826/frogapp.git",
+  "author": "George Tuan <george@tuan.pro>",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently \"yarn devserver\" \"yarn webpack\"",
+    "devserver": "dev_appserver.py app.yaml",
+    "webpack": "webpack --watch"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^2.30.1",
+    "path": "^0.12.7",
+    "webpack": "^3.8.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "concurrently": "^3.5.0"
+  }
+}
